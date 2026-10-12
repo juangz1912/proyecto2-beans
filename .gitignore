@@ -1,0 +1,23 @@
+# Apuntes internos de estudio, no van al repo
+_apuntes_internos/
+
+# Scripts de generación, no son parte de la entrega
+_build_notebook.py
+_run_nb.py
+
+# Datos descargados en local (el notebook los carga desde TensorFlow)
+beans_data/
+*.zip
+
+# Python / Keras
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+*.h5
+*.keras
+
+# Sistema
+.DS_Store
+Thumbs.db
