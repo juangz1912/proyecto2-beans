@@ -6,8 +6,9 @@ o si tiene *Bean Rust*.
 
 Todo el trabajo está en un solo notebook: carga del dataset desde TensorFlow Datasets, análisis
 exploratorio con imágenes de las tres clases, una CNN pequeña desde cero (para mover el número de
-filtros) y fine-tuning de dos modelos fundacionales preentrenados en ImageNet, **VGG16** y
-**ResNet50**. Al final se elige el mejor por F1 macro en validation y se evalúa una sola vez en test.
+filtros) y dos redes preentrenadas en ImageNet, **VGG16** y **ResNet50**, con la base congelada.
+El fine-tuning (últimas 20 capas) se hace solo sobre el ganador. Al final se elige por F1 macro
+en validation y se evalúa una sola vez en test.
 
 ## Dataset
 
